@@ -12,4 +12,5 @@ git commit -m "first commit"
 git push -u origin master
 git pull
 
-git@github.com: Permission denied (publickey).
+git remote show origin
+
