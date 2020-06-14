@@ -8,13 +8,13 @@
     .container{
         position: absolute;
         left: 15%;
-        top: 50%;
+        top: 25%;
         z-index: 100;
 
         height: 400px;
         margin-top: -200px;
 
-        width: 600px;
+        width: 400px;
         margin-left: -300px;
         text-align: center;
     }
@@ -30,7 +30,7 @@ body, html {
 /* Style tab links */
 .tablink {
     background-color: #4bcffa;
-    color: white;
+    color: rgb(0, 0, 0);
     float: left;
     border: none;
     outline: none;
@@ -41,19 +41,22 @@ body, html {
 }
 
 .tablink:hover {
-    background-color: #4bcffa;
+    background-color: #83e0ff;
 }
 
 
 .tabcontent {
-    color: white;
+    color: rgb(0, 0, 0);
     display: none;
     padding: 100px 20px;
     height: 100%;
 }
 #heading{
-    font-family: 'VT323', monospace;
+    font-family: 'Amatic SC', cursive;
     font-size: 80px;
+}
+.page{
+    
 }
 
 
@@ -63,11 +66,14 @@ body, html {
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
     crossorigin="anonymous"
-/>
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lobster&family=Pacifico&family=VT323&display=swap" rel="stylesheet">
+
 </head>
 <body style="background-color: #4bcffa;">
     <div class="container">
-        <div id="heading">Nối chữ</div>
+        <div id="heading">Nối chữ
+        </div>
         
         <div class="row">
             <div class="col col-md-3" style="background-color: #4bcffa;">
@@ -77,23 +83,26 @@ body, html {
             <div class="col col-md-3" style="background-color: #4bcffa;">
             </div>
         </div>
-        <br><br><br><br><br>
+        <div class="page">
+            <br><br><br>
             <div class="row">
                 <input class="form-control col-lg form-control-lg" rows="5" id="focusedInput" type="text" placeholder="Nhập từ có nghĩa">
-                <svg class="bi bi-arrow-right-square-fill" width="5em" height="4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm5.646 10.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"/>
-                </svg>
+                <button>
+                    <svg class="bi bi-arrow-right-square-fill" width="5em" height="4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm5.646 10.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"/>
+                    </svg>
+                </button>
+                
                 <input class="form-control col-lg form-control-lg" rows="5" id="disabledInput" type="text" disabled>
         
         <div id="Home" class="tabcontent">
-
-
         </div>
     
         <div id="News" class="tabcontent">
         
-    
-        </div>
+            <br><br><br>
+            </div>
+            </div>
     </div>
 
     <!-- =============================================== -->
